@@ -5,7 +5,7 @@
         <a class="p-2 text-dark" href="leaderboard.php">Доска почета</a>
     </nav>
     <?php
-    if($_COOKIE['login'] == ''):
+    if(!isset($_COOKIE['login'])):
         ?>
         <a class="btn btn-outline-primary m-2" href="authentication.php">Войти</a>
         <a class="btn btn-success" href="registration.php">Регистрация</a>

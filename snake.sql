@@ -8,6 +8,7 @@
 -- Версия PHP: 7.3.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 START TRANSACTION;
 SET time_zone = "+00:00";
 

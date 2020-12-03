@@ -19,7 +19,7 @@
         <div class="content">
             <div class="col-md-12 mb-5">
                 <?php
-                if($_COOKIE['login'] == ''):
+                if(!isset($_COOKIE['login'])):
                     ?>
                     <h4>Форма авторизации</h4>
                     <form id="authForm">

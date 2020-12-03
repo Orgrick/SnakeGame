@@ -16,5 +16,4 @@ const getResourse = async (url) => {
     }
     return await res.text();
     // return await res.json();
-
 };

@@ -139,11 +139,13 @@ function recordGame(score,time){
             document.querySelector('#result').insertAdjacentHTML('afterend',`<p id="errorMsg"></p>`)
             document.querySelector('#errorMsg').style.display = "block"
             document.querySelector('#errorMsg').innerText = `Зарегестрируйтесь или войдите, что бы сохранять свои игры`
+            setTimeout(()=>{
+                document.querySelector('#errorMsg').remove()
+            },2000)
         }else {
             if (data == 'OK'){
                 document.querySelector('#result').insertAdjacentHTML('beforeend',`<br>Игра добавлена в исторю`)
             }
-
         }
 
     }).catch(e =>{

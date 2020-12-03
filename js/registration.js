@@ -15,7 +15,7 @@ regForm.addEventListener('submit', (e) => {
             document.querySelector('#error_block').style.display = 'block'
             setInterval(()=>{
                 document.querySelector('#error_block').style.display = 'none'
-            },3000)
+            },5000)
         }
     }).catch(()=>{
         document.querySelector('#error_block').innerHTML = 'Серевер недоступен, попробуйте позже'
